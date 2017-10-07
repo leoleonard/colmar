@@ -80,6 +80,17 @@ nav a {
   color: grey;
 }
 
+.main-container h2, .main-container h3 {
+  color: black;
+  font-weight: bold;
+}
+
+.information-1 h1 {
+  color: black;
+  font-weight: bold;
+  font-size: 46px;
+}
+
 .banner {
 background-color: lightgrey;
 display: flex;
@@ -229,7 +240,7 @@ flex-direction: column;
   display: inline-block;
   justify-content: flex-start;
   flex-wrap: wrap;
-  text-align: center;
+  text-align: left;
   margin: 32px;
 }
 
@@ -240,6 +251,8 @@ flex-direction: column;
 
 .course-ic p:nth-child(2) {
   margin-top: 16px;
+  color: black;
+  font-weight: bold;
 }
 
 .course-ic p:nth-child(3) {
@@ -263,6 +276,11 @@ flex-direction: column;
   flex-direction: column;
 }
 
+.course-mobile h2 {
+  text-align: center;
+  margin-top: 32px;
+}
+
 .course-mb {
   margin: 8px;
 }
@@ -279,31 +297,58 @@ flex-direction: column;
 
 /*-- end course mobile ---*/
 
-.exhibit-container {
-  background-color: white;
-  width: 100%;
+.exhibit-menu h2 {
+text-align: center;
+margin: 32px;
 }
 
-.header-exhibit {
-  display: inline;
-  text-align: center;
-  margin: 0 auto;
+
+.exhibit-container {
+  background-color: white;
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
 }
+
+
 
 
 .exhibit-video {
   display: flex;
   flex-direction: column;
-  width: 60%;
   flex: 1;
   margin: 32px 24px 24px 24px;
+  width: 60%;
 }
 
 .exhibit-info {
-  width: 40%;
-  margin: 32px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  width: 40%;
+}
+
+
+.exhibit-info-1, .exhibit-info-2 {
+  display: flex;
+}
+
+.exhibit-info-1 {
+    background-color: lightgrey;
+}
+
+.exhibit-info-1-pic, .exhibit-info-2-pic {
+  width: 35%;
+  height: auto;
+  margin: 16px;
+}
+
+.exhibit-info img {
+  width: 100%;
+  height: auto;
+}
+
+.exhibit-info-1-text, .exhibit-info-2-text {
+  width: 65%;
 }
 
 /* ------------ exhibits - mobile --------*/
@@ -314,7 +359,7 @@ flex-direction: column;
     flex-direction: column;
   }
 
-  .header-exhibit {
+  .exhibit-menu h2 {
     text-align: center;
     margin: 32px 0 16px 0;
   }
